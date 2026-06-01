@@ -294,6 +294,10 @@ h1, h2, h3, h4 {
 .section-bg-blush { background: var(--blush); }
 .section-bg-sage  { background: #eef0ec; }
 
+section {
+  scroll-margin-top: 90px;
+}
+
 .section-eyebrow {
   font-family: 'DM Mono', monospace;
   font-size: 11px;
@@ -626,7 +630,7 @@ h1, h2, h3, h4 {
 /* ============================================
    PHOTO GALLERY STRIP
    ============================================ */
-.gallery-strip { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; }
+.gallery-strip { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory;}
 .gallery-strip::-webkit-scrollbar { height: 4px; }
 .gallery-strip::-webkit-scrollbar-thumb { background: var(--rose); border-radius: 99px; }
 .gallery-item {
@@ -636,6 +640,7 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
+  scroll-snap-align: start;
 }
 .gallery-item img {
   width: 100%;
@@ -777,4 +782,169 @@ footer a:hover { color: var(--rose-deep); }
     .hero { padding: 56px 0 48px; }
     .exp-card .card { flex-direction: column; gap: 6px; }
     .contact-card .card { padding: 36px 22px; }
+}
+
+/* ============================================
+   MOBILE OPTIMIZATION
+   ============================================ */
+@media (max-width: 767.98px) {
+
+  /* Navbar */
+  .navbar-custom {
+    padding: 10px 0;
+  }
+
+  .logo {
+    height: 34px;
+  }
+
+  .navbar-brand-name {
+    font-size: 20px;
+  }
+
+  .navbar-collapse {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-link-custom {
+    padding: 12px 0 !important;
+    font-size: 11px;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 110px 0 70px;
+  }
+
+  .hero-eyebrow {
+    margin-inline: auto;
+  }
+
+  .hero-title {
+    font-size: clamp(42px, 12vw, 58px);
+    line-height: 1.05;
+    letter-spacing: -1px;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+
+  .hero-content .d-flex {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btn-rose,
+  .btn-outline-rose {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero Photos */
+  .hero-photo-stack {
+    height: 320px;
+    margin-top: 50px;
+  }
+
+  .photo-main {
+    width: 190px;
+    height: 260px;
+  }
+
+  .photo-float-1 {
+    width: 90px;
+    height: 120px;
+    top: 20px;
+    right: 5px;
+  }
+
+  .photo-float-2 {
+    width: 80px;
+    height: 100px;
+    left: 5px;
+    bottom: 20px;
+  }
+
+  /* Sections */
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-sub {
+    font-size: 14px;
+  }
+
+  /* About */
+  .about-text {
+    text-align: center;
+  }
+
+  .about-img-main {
+    height: 300px;
+  }
+
+  .about-img-accent {
+    width: 100px;
+    height: 130px;
+    bottom: -10px;
+    right: 10px;
+  }
+
+  .pill-list {
+    justify-content: center;
+  }
+
+  /* Projects */
+  .project-img {
+    height: 190px;
+  }
+
+  .project-body {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline-dot {
+    left: -31px;
+  }
+
+  .timeline-title {
+    font-size: 18px;
+  }
+
+  /* Contact */
+  .contact-card {
+    padding: 32px 20px;
+  }
+
+  /* Gallery */
+  .gallery-item {
+    width: 150px;
+    height: 220px;
+  }
+
+  /* Stats */
+  .stat-item {
+    padding: 16px;
+  }
+
+  .stat-num {
+    font-size: 38px;
+  }
 }
