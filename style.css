@@ -948,3 +948,13 @@ footer a:hover { color: var(--rose-deep); }
     font-size: 38px;
   }
 }
+
+@media (max-width: 768px){
+  .about-img-accent{
+    right: 0;
+  }
+
+  .hero-badge{
+    display:none;
+  }
+}
