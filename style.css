@@ -770,9 +770,34 @@ footer a:hover { color: var(--rose-deep); }
 }
 @media (max-width: 575.98px) {
   .section-pad { padding: 64px 0; }
-  .hero-badge { display: none; }
   .gallery-item { width: 170px; height: 220px; }
   .stat-num { font-size: 42px; }
+
+  .hero-badge {
+    position: absolute;
+    bottom: 30px; right: 5px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 7px 9px;
+    box-shadow: var(--shadow-card);
+    z-index: 5;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .hero-badge .badge-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--rose-deep);
+    line-height: 1;
+    display: block;
+  }
+  .hero-badge .badge-label {
+    color: var(--taupe);
+    font-size: 11px;
+    letter-spacing: .5px;
+  }
 }
 
 /* ── Responsive ── */
@@ -954,7 +979,29 @@ footer a:hover { color: var(--rose-deep); }
     right: 0;
   }
 
-  .hero-badge{
-    display:none;
+  .hero-badge {
+    position: absolute;
+    bottom: 30px; right: 5px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 7px 9px;
+    box-shadow: var(--shadow-card);
+    z-index: 5;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .hero-badge .badge-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--rose-deep);
+    line-height: 1;
+    display: block;
+  }
+  .hero-badge .badge-label {
+    color: var(--taupe);
+    font-size: 12px;
+    letter-spacing: .5px;
   }
 }
