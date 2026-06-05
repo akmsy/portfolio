@@ -946,7 +946,7 @@ footer a:hover { color: var(--rose-deep); }
   }
 
   .timeline-dot {
-    left: 40px;
+    left: -30px;
   }
 
   .timeline-title {
