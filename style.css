@@ -941,8 +941,8 @@ footer a:hover { color: var(--rose-deep); }
   }
 
   /* Timeline */
-  .timeline {
-    padding-left: 24px;
+  .timeline { 
+    position: relative; padding-left: 40px; 
   }
 
   .timeline-dot {
