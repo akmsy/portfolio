@@ -947,7 +947,7 @@ footer a:hover { color: var(--rose-deep); }
   .timeline::before {
     content: '';
     position: absolute;
-    left: 5px; top: 5px; bottom: 0;
+    left: 16px; top: 5px; bottom: 0;
     width: 1px;
     background: #d9a6a6;
   }
