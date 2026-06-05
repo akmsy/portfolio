@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap');
 
-* {
-    outline: 1px solid red;
-}
-
 /* ── Variables ── */
 :root {
   --rose:       #e8b4b8;
@@ -881,6 +877,8 @@ footer a:hover { color: var(--rose-deep); }
   .hero-photo-stack {
     height: 320px;
     margin-top: 50px;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .photo-main {
@@ -892,13 +890,13 @@ footer a:hover { color: var(--rose-deep); }
     width: 90px;
     height: 120px;
     top: 20px;
-    right: 5px;
+    right: 0;
   }
 
   .photo-float-2 {
     width: 80px;
     height: 100px;
-    left: 5px;
+    left: 0;
     bottom: 20px;
   }
 
