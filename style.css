@@ -925,6 +925,10 @@ footer a:hover { color: var(--rose-deep); }
     right: 10px;
   }
 
+  .about-img-wrap {
+      overflow: clip;
+  }
+
   .pill-list {
     justify-content: center;
   }
@@ -944,8 +948,11 @@ footer a:hover { color: var(--rose-deep); }
 
   /* Timeline */
   .timeline { 
-    position: relative; padding-left: 40px; 
+    position: relative; 
+    padding-left: 32px; 
+    overflow: hidden;
   }
+
   .timeline::before {
     content: '';
     position: absolute;
@@ -955,7 +962,12 @@ footer a:hover { color: var(--rose-deep); }
   }
 
   .timeline-dot {
-    left: -30px;
+    left: -22px;
+  }
+
+  .about-img-wrap,
+  .timeline {
+    outline: 3px solid blue !important;
   }
 
   .timeline-title {
