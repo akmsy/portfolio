@@ -32,6 +32,7 @@ body {
   font-weight: 300;
   line-height: 1.75;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* ── Petal texture background ── */
@@ -842,6 +843,16 @@ footer a:hover { color: var(--rose-deep); }
   .hero {
     text-align: center;
     padding: 110px 0 70px;
+    overflow: hidden;
+  }
+
+  .container {
+    overflow: hidden;
+  }
+
+  .hero .row{
+    margin-left:0;
+    margin-right:0;
   }
 
   .hero-eyebrow {
@@ -878,7 +889,8 @@ footer a:hover { color: var(--rose-deep); }
     height: 320px;
     margin-top: 50px;
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .photo-main {
@@ -890,13 +902,13 @@ footer a:hover { color: var(--rose-deep); }
     width: 90px;
     height: 120px;
     top: 20px;
-    right: 0;
+    right: 10px;
   }
 
   .photo-float-2 {
     width: 80px;
     height: 100px;
-    left: 0;
+    left: 10px;
     bottom: 20px;
   }
 
