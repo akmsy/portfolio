@@ -847,7 +847,7 @@ footer a:hover { color: var(--rose-deep); }
   }
 
   .container {
-    overflow: hidden;
+    overflow: visible;
   }
 
   .hero .row{
@@ -997,14 +997,18 @@ footer a:hover { color: var(--rose-deep); }
 
 @media (max-width: 768px){
   .about-img-accent{
-    right: 0;
+    width:90px;
+    height:120px;
+    right:-10px;
+    bottom:-10px;
+    border:3px solid #fff;
   }
 
   .hero-badge {
     position: absolute;
     bottom: 30px; right: 5px;
     background: white;
-    border: 1px solid var(--border);
+    border: 0.5px solid var(--border);
     border-radius: 14px;
     padding: 7px 9px;
     box-shadow: var(--shadow-card);
