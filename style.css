@@ -997,7 +997,7 @@ footer a:hover { color: var(--rose-deep); }
 
 @media (max-width: 768px){
   .about-img-accent{
-    left: 90px;
+    right: 0;
   }
 
   .hero-badge {
