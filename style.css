@@ -930,10 +930,6 @@ footer a:hover { color: var(--rose-deep); }
     height: 300px;
   }
 
-  .container {
-    overflow: visible;
-  }
-
   .about-img-accent{
     width: 90px;
     height: 120px;
