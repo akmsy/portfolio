@@ -899,16 +899,16 @@ footer a:hover { color: var(--rose-deep); }
   }
 
   .photo-float-1 {
-    width: 90px;
-    height: 120px;
-    top: 20px;
+    width: 80px;
+    height: 100px;
+    top: 15px;
     right: 10px;
   }
 
   .photo-float-2 {
     width: 80px;
     height: 100px;
-    left: 10px;
+    left: 0px;
     bottom: 20px;
   }
 
