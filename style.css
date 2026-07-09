@@ -847,7 +847,7 @@ footer a:hover { color: var(--rose-deep); }
   }
 
   .container {
-    overflow: hidden;
+    overflow: visible;
   }
 
   .hero .row{
