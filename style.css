@@ -930,11 +930,12 @@ footer a:hover { color: var(--rose-deep); }
     height: 300px;
   }
 
-  .about-img-accent {
-    width: 100px;
-    height: 130px;
+  .about-img-accent{
+    width: 90px;
+    height: 120px;
+    right: -10px;
     bottom: -10px;
-    right: 10px;
+    border: 3px solid #fff;
   }
 
   .pill-list {
@@ -997,7 +998,11 @@ footer a:hover { color: var(--rose-deep); }
 
 @media (max-width: 768px){
   .about-img-accent{
-    right: 0;
+    width: 90px;
+    height: 120px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid #fff;
   }
 
   .hero-badge {
