@@ -850,11 +850,6 @@ footer a:hover { color: var(--rose-deep); }
     overflow: visible;
   }
 
-  .hero .row{
-    margin-left:0;
-    margin-right:0;
-  }
-
   .hero-eyebrow {
     margin-inline: auto;
   }
@@ -997,16 +992,16 @@ footer a:hover { color: var(--rose-deep); }
 
 @media (max-width: 768px){
   .about-img-accent{
-    width:90px;
-    height:120px;
-    right:-10px;
-    bottom:-10px;
-    border:3px solid #fff;
+    width: 90px;
+    height: 120px;
+    right: -10px;
+    bottom: -10px;
+    border: 3px solid #fff;
   }
 
   .hero-badge {
     position: absolute;
-    bottom: 30px; right: 5px;
+    bottom: 30px; right: 0;
     background: white;
     border: 0.5px solid var(--border);
     border-radius: 14px;
